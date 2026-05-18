@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tropical Açaí | Monte seu açaí</title>
+    <meta
+      name="description"
+      content="Monte seu açaí da Tropical Açaí com tamanho, cremes, frutas, recheios, coberturas e extras."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Tropical Acai">
+        <span class="brand-mark">T</span>
+        <span>Tropical Açaí</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#checkout">Finalizar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Açaí do seu jeito</p>
+          <h1>Tropical Açaí</h1>
+          <p class="hero-text">
+            Monte um copo cremoso, gelado e cheio de sabor em poucos toques.
+          </p>
+          <a class="primary-action" href="#cardapio">Montar meu açaí</a>
+        </div>
+        <div class="hero-media" aria-label="Açaí com frutas e granola">
+          <img src="assets/hero-acai.png" alt="Açaí com frutas, granola e cobertura" />
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Diferenciais">
+        <div>
+          <strong>Entrega rápida</strong>
+          <span>Pedido direto pelo WhatsApp</span>
+        </div>
+        <div>
+          <strong>Combinações livres</strong>
+          <span>Cremes, frutas e coberturas</span>
+        </div>
+        <div>
+          <strong>Feito na hora</strong>
+          <span>Açaí cremoso e bem montado</span>
+        </div>
+      </section>
+
+      <section class="builder" id="cardapio">
+        <div class="section-heading">
+          <p class="eyebrow">Cardápio</p>
+          <h2>Monte seu pedido</h2>
+          <p>Escolha o tamanho e personalize com seus favoritos.</p>
+        </div>
+
+        <div class="order-layout">
+          <div class="customizer" id="pedido">
+            <div class="tabs" role="tablist" aria-label="Categorias do cardapio">
+              <button class="tab active" data-tab="sizes" type="button">Tamanhos</button>
+              <button class="tab" data-tab="creams" type="button">Cremes</button>
+              <button class="tab" data-tab="fillings" type="button">Recheios</button>
+              <button class="tab" data-tab="fruits" type="button">Frutas</button>
+              <button class="tab" data-tab="toppings" type="button">Coberturas</button>
+              <button class="tab" data-tab="extras" type="button">Extras</button>
+            </div>
+
+            <div class="option-panel active" data-panel="sizes">
+              <div class="panel-title">
+                <h3>Escolha o tamanho</h3>
+                <span>Obrigatório</span>
+              </div>
+              <div class="option-grid" data-options="sizes"></div>
+            </div>
+
+            <div class="option-panel" data-panel="creams">
+              <div class="panel-title">
+                <h3>Cremes</h3>
+                <span>Escolha até 3</span>
+              </div>
+              <div class="option-grid" data-options="creams"></div>
+            </div>
+
+            <div class="option-panel" data-panel="fillings">
+              <div class="panel-title">
+                <h3>Recheios e acompanhamentos</h3>
+                <span>Escolha até 3</span>
+              </div>
+              <div class="option-grid" data-options="fillings"></div>
+            </div>
+
+            <div class="option-panel" data-panel="fruits">
+              <div class="panel-title">
+                <h3>Frutas</h3>
+                <span>Inclua junto aos acompanhamentos</span>
+              </div>
+              <div class="option-grid" data-options="fruits"></div>
+            </div>
+
+            <div class="option-panel" data-panel="toppings">
+              <div class="panel-title">
+                <h3>Cobertura</h3>
+                <span>Escolha 1</span>
+              </div>
+              <div class="option-grid" data-options="toppings"></div>
+            </div>
+
+            <div class="option-panel" data-panel="extras">
+              <div class="panel-title">
+                <h3>Extras</h3>
+                <span>Opcional</span>
+              </div>
+              <div class="option-grid" data-options="extras"></div>
+            </div>
+          </div>
+
+          <aside class="cart" aria-label="Carrinho de compras">
+            <div class="cart-header">
+              <div>
+                <p class="eyebrow">Carrinho</p>
+                <h2>Seu açaí</h2>
+              </div>
+              <button class="ghost-button" id="clearCart" type="button">Limpar</button>
+            </div>
+            <div class="cart-lines" id="cartLines"></div>
+            <div class="cart-total">
+              <span>Total</span>
+              <strong id="cartTotal">R$ 0,00</strong>
+            </div>
+            <a class="checkout-link" href="#checkout">Finalizar pedido</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="checkout" id="checkout">
+        <div class="section-heading">
+          <p class="eyebrow">Finalização</p>
+          <h2>Dados para entrega</h2>
+          <p>Preencha as informações e envie o pedido pronto pelo WhatsApp.</p>
+        </div>
+
+        <form class="checkout-form" id="checkoutForm">
+          <label>
+            Nome do cliente
+            <input type="text" id="customerName" placeholder="Seu nome" required />
+          </label>
+          <label>
+            Telefone/WhatsApp
+            <input type="tel" id="customerPhone" placeholder="(00) 00000-0000" required />
+          </label>
+          <label class="wide">
+            Endereço de entrega
+            <input type="text" id="customerAddress" placeholder="Rua, número, bairro e referência" required />
+          </label>
+          <label>
+            Forma de pagamento
+            <select id="paymentMethod" required>
+              <option value="">Selecione</option>
+              <option>Pix</option>
+              <option>Cartão na entrega</option>
+              <option>Dinheiro</option>
+            </select>
+          </label>
+          <label>
+            Observações do pedido
+            <textarea id="orderNotes" rows="4" placeholder="Ex.: sem banana, pouco leite condensado"></textarea>
+          </label>
+          <button class="whatsapp-button wide" type="submit">Enviar pedido pelo WhatsApp</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Tropical Açaí</strong>
+      <span>Açaí, cremes e combinações tropicais para o seu dia.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
