@@ -5,7 +5,7 @@ const currency = new Intl.NumberFormat("pt-BR", {
   currency: "BRL",
 });
 
-const menu = {
+const fallbackMenu = {
   sizes: [
     { id: "300ml", name: "Açaí 300ml", price: 14.9, desc: "Ideal para matar a vontade" },
     { id: "500ml", name: "Açaí 500ml", price: 22.9, desc: "Mais cremoso, mais completo" },
@@ -43,6 +43,21 @@ const menu = {
     { id: "dose-acai", name: "Dose extra de açaí", price: 5, desc: "Mais sabor no copo" },
   ],
 };
+
+let menu = fallbackMenu;
+
+async function loadMenu() {
+  try {
+    const response = await fetch("cardapio.json", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error("Cardapio indisponivel");
+    }
+
+    menu = await response.json();
+  } catch (error) {
+    menu = fallbackMenu;
+  }
+}
 
 const state = {
   size: null,
@@ -298,5 +313,7 @@ checkoutForm.addEventListener("submit", (event) => {
   window.open(`https://wa.me/${STORE_WHATSAPP}?text=${message}`, "_blank");
 });
 
-renderOptions();
-renderCart();
+loadMenu().then(() => {
+  renderOptions();
+  renderCart();
+});

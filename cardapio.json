@@ -1,0 +1,158 @@
+{
+  "sizes": [
+    {
+      "id": "300ml",
+      "name": "Açaí 300ml",
+      "price": 14.9,
+      "desc": "Ideal para matar a vontade"
+    },
+    {
+      "id": "500ml",
+      "name": "Açaí 500ml",
+      "price": 22.9,
+      "desc": "Mais cremoso, mais completo"
+    }
+  ],
+  "creams": [
+    {
+      "id": "ninho",
+      "name": "Creme de Ninho",
+      "price": 0,
+      "desc": "Doce e bem cremoso"
+    },
+    {
+      "id": "pacoca",
+      "name": "Creme de Paçoca",
+      "price": 0,
+      "desc": "Sabor brasileiro clássico"
+    },
+    {
+      "id": "cupuuacu",
+      "name": "Creme de Cupuaçu",
+      "price": 0,
+      "desc": "Tropical e levemente azedinho"
+    },
+    {
+      "id": "morango",
+      "name": "Creme de Morango",
+      "price": 0,
+      "desc": "Frutado e suave"
+    },
+    {
+      "id": "chocolate",
+      "name": "Creme de Chocolate",
+      "price": 0,
+      "desc": "Para uma mistura intensa"
+    }
+  ],
+  "fillings": [
+    {
+      "id": "granola",
+      "name": "Granola",
+      "price": 0,
+      "desc": "Crocante tradicional"
+    },
+    {
+      "id": "leite-po",
+      "name": "Leite em pó",
+      "price": 0,
+      "desc": "Finalização cremosa"
+    },
+    {
+      "id": "confete",
+      "name": "Confete",
+      "price": 0,
+      "desc": "Colorido e doce"
+    },
+    {
+      "id": "amendoim",
+      "name": "Amendoim",
+      "price": 0,
+      "desc": "Crocância extra"
+    },
+    {
+      "id": "chocoball",
+      "name": "Chocoball",
+      "price": 0,
+      "desc": "Bolinha de chocolate"
+    }
+  ],
+  "fruits": [
+    {
+      "id": "banana",
+      "name": "Banana",
+      "price": 0,
+      "desc": "Combina com tudo"
+    },
+    {
+      "id": "morango-fruta",
+      "name": "Morango",
+      "price": 0,
+      "desc": "Fresco e docinho"
+    },
+    {
+      "id": "kiwi",
+      "name": "Kiwi",
+      "price": 1.5,
+      "desc": "Extra tropical"
+    },
+    {
+      "id": "manga",
+      "name": "Manga",
+      "price": 1.5,
+      "desc": "Doce e suculenta"
+    }
+  ],
+  "toppings": [
+    {
+      "id": "leite-condensado",
+      "name": "Leite condensado",
+      "price": 0,
+      "desc": "Cobertura clássica"
+    },
+    {
+      "id": "chocolate-calda",
+      "name": "Calda de chocolate",
+      "price": 0,
+      "desc": "Doce na medida"
+    },
+    {
+      "id": "morango-calda",
+      "name": "Calda de morango",
+      "price": 0,
+      "desc": "Frutada e brilhante"
+    },
+    {
+      "id": "mel",
+      "name": "Mel",
+      "price": 0,
+      "desc": "Toque natural"
+    }
+  ],
+  "extras": [
+    {
+      "id": "nutella",
+      "name": "Nutella",
+      "price": 4,
+      "desc": "Camada extra especial"
+    },
+    {
+      "id": "ovomaltine",
+      "name": "Ovomaltine",
+      "price": 3,
+      "desc": "Crocante maltado"
+    },
+    {
+      "id": "bis",
+      "name": "Bis picado",
+      "price": 3,
+      "desc": "Chocolate crocante"
+    },
+    {
+      "id": "dose-acai",
+      "name": "Dose extra de açaí",
+      "price": 5,
+      "desc": "Mais sabor no copo"
+    }
+  ]
+}
