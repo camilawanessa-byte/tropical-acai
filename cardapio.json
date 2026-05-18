@@ -3,13 +3,13 @@
     {
       "id": "300ml",
       "name": "Açaí 300ml",
-      "price": 10,00,
+      "price": 10,0,
       "desc": "Ideal para matar a vontade"
     },
     {
       "id": "500ml",
       "name": "Açaí 500ml",
-      "price": 15,00,
+      "price": 15,0,
       "desc": "Mais cremoso, mais completo"
     }
   ],
